@@ -270,16 +270,108 @@ footer {
     padding-bottom: 30px;
 }
 
-.footer_area_item{
+.footer_area_item {
     flex: 1;
 }
 
-footer .widget , footer .widget_title_text{
+footer .widget,
+footer .widget_title_text {
     color: #FFF;
 }
-.footer_copy{
+
+.footer_copy {
     color: #FFF;
     border-top: 1px solid #5c5c5c;
     height: 40px;
     line-height: 40px;
+}
+
+.menuMobile{
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line{
+  height: 3px;
+  width: auto;
+  background-color: #36a9e1;
+}
+
+@media (max-width:590px) {
+
+    .banner_headline h1,
+    h2 {
+        padding-left: 20px;
+        text-shadow: 2px 2px 2px #555;
+        font-size: 40px;
+    }   
+    .banner_headline{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    .banner_options {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section {
+        margin-top: 110px
+    }
+
+    #geral section {
+        padding-left: 20px;
+    }
+
+    #geral aside {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    header{
+        height: auto;
+        min-height: 40px;
+    }
+
+    .logo {
+        padding-left: 20px ;
+    }
+
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
 }
